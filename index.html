@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukraine Online Roleplay - Play in Ukraine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --primary-color: #0077b6; --secondary-color: #00b4df; --accent-color: #ffd700; --accent-color2: #ffaa00; --background-gradient: linear-gradient(to bottom, #0e94d4, #0077b6); --text: #000; --header-footer-bg: #000; --grey-text: #ccc; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background-gradient);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      background: var(--header-footer-bg);
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+    .nav-links a {
+      color: var(--grey-text);
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-links a:hover { color: var(--accent-color); }
+
+    .hero {
+      margin-left: 8%;
+      text-align: left;
+      padding: 180px 40px 100px;
+    }
+    .hero h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    .btn-download {
+      display: inline-block;
+      background: linear-gradient(to right, var(--accent-color), var(--accent-color2));
+      color: var(--text);
+      padding: 18px 50px;
+      border-radius: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .btn-download:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .screenshots {
+      width: 80%;
+      margin: 100px auto;
+      text-align: center;
+    }
+    .screenshots h2 {
+      font-size: 48px;
+      margin-bottom: 50px;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+    }
+    .carousel img {
+      width: 50%;
+      flex-shrink: 0;
+      transition: transform 0.6s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    footer {
+      background: var(--header-footer-bg);
+      padding: 60px 40px 30px;
+      margin-top: 100px;
+    }
+    .footer-content {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer-content :nth-child(1) {
+      align-items: center;
+      
+    }
+    .footer-col h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: var(--accent-color);
+    }
+    .footer-col a {
+      display: block;
+      color: var(--grey-text);
+      margin: 10px 0;
+      text-decoration: none;
+    }
+    .footer-col a:hover { color: white; }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+    }
+    .social-icons img {
+      width: 40px;
+    }
+    .social-icons img:hover { filter: grayscale(0); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="pictures/logo.png" alt="Ukraine Online Logo" width="120"/>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">How to Start</a>
+        <a href="#">Forum</a>
+        <a href="#">Game Store</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>PLAY IN <br>UKRAINE</h1>
+    <p>Start your journey and build your story</p>
+    <a href="#" class="btn-download">DOWNLOAD</a>
+    <img src="pictures/hero car.png" alt="Hero Car" style="position: absolute; right: 8%; top:100px; width:80%; max-width:800px;"/>
+  </section>
+
+  <section class="screenshots">
+    <h2>Screenshots from the Game</h2>
+    <div class="carousel" id="carousel">
+      <img src="pictures/Vodafone.png" alt="Phone number provider">
+      <img src="pictures/АТB.png" alt="Supermarket">
+      <img src="pictures/Cinema.png" alt="Cinema">
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div class="logo"><img src="pictures/logo.png" alt="Ukraine Online Logo" width="190"/></div>
+        <div class="social-icons">
+          <a href="#"><img src="pictures/disc icon.svg"/></a>
+          <a href="#"><img src="pictures/youtube icon.svg"/></a>
+          <a href="#"><img src="pictures/TikTok icon.svg"/></a>
+          <a href="#"><img src="pictures/inst icon.svg"/></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <a href="#">Home</a>
+        <a href="#">Special Offers</a>
+        <a href="#">Game Screenshots</a>
+        <a href="#">User Agreement</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Community</h3>
+        <a href="#">Vacancies</a>
+        <a href="#">Support the Project</a>
+        <a href="#">Become a Blogger</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Information</h3>
+        <a href="#">About Us</a>
+        <a href="#">Game Forum</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
